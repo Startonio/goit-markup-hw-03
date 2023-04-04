@@ -4,19 +4,70 @@
     --logo-left: #4D5AE5;
     --logo-right: #2E2F42;
     --primary-text-color: #434455;
+    --main-title-color: #ffffff;
     --background-color: #ffffff;
     --focus-hover: #404bbf;
     --btn-list-color: #ffffff;
     --btn-list-background: #404bbf;
+    --background-title-color: #2e2f42;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--primary-text-color);
-    background-color: var(--background-color)
+    background-color: var(--background-color);
+}
+
+
+
+/* ------------------------------------------------------------скидання---------------------------------------- */
+
+.container {
+    width: 1150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid rebeccapurple;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
 }
 
 /*------------------------------------------------------------- header----------------------------------------- */
+.header {}
+
 /*-------------------------------------------------------- logo------------------------------------------------ */
 .logo-left {
     font-family: "Raleway", sans-serif;
@@ -26,14 +77,43 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--logo-left)
+    color: var(--logo-left);
+    box-sizing: content-box;
+    width: 115px;
+    margin-right: 76px;
 }
 
 .logo-right {
-    color: var(--logo-right)
+    color: var(--logo-right);
+    margin-right: 75px;
 }
 
 /* navigation */
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+/* .header-item {
+    margin-right: 40px;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+} */
+
+.header-container {
+    display: flex;
+}
 
 .nav-link {
     font-weight: 500;
@@ -50,9 +130,7 @@ body {
 
 /*--------------------------------------------- address header --------------------------------------------------*/
 
-.header-adderess {
-    font-style: normal;
-}
+.header-adderess {}
 
 .address-link {
     font-family: 'Roboto';
@@ -69,39 +147,58 @@ body {
     color: var(--focus-hover);
 }
 
-
-
-.link {
-    text-decoration: none;
+.adrdress-list {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
-.list {
-    list-style: none;
+.mail {
+    margin-right: 40px;
 }
+
+.phone {
+    width: 150px;
+}
+
 
 /**------------------------------------------------ HERO-SECTION -------------------------------------------------*/
 
 .hero-list {
-    background-color: #2e2f42;
+    display: flex;
+    background-color: var(--background-title-color);
+    align-items: center;
+    padding: 188px 0;
 }
 
-.hero-subject {
+.hero-title {
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: var(--main-title-color);
+    width: 496px;
+    margin: 0 auto;
 }
 
 .button-hero {
-    background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--main-title-color);
+    background-color: #4d5ae5;
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    padding: 16px 32px;
+    margin-top: 48px;
 }
 
 .button-hero:is(:focus, :hover) {
@@ -110,9 +207,16 @@ body {
 }
 
 
-/** ---------------------------------------------------SECTION ONE-------------------------------------------- */
+/** ---------------------------------------------------SECTION two-------------------------------------------- */
 
-.section-subject {
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+
+.section-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -120,59 +224,158 @@ body {
     color: #2e2f42;
 }
 
-.headline-item {
+.about-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.text-list {
+    width: 264px;
+}
+
+.about-headline-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    margin-bottom: 8px;
+    color: var(--background-title-color);
 }
 
-.text-item {
+.about-text-item {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--primary-text-color);
 }
 
 /** -------------------------------------------------------SECTION TREE------------------------------------------ */
-.section-title {
+.doing {
+    padding-bottom: 120px;
+}
+
+.doing-title {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2e2f42;
+    color: var(--background-title-color);
+    margin-bottom: 72px;
 }
 
-/*------------------------------------------------------------ SECTION FOUR --------------------------------------*/
-.section-four {
-    background-color: #f4f4fd;
+.doing-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
 }
 
-.image-team {
-    background-color: #ffffff;
+.doing-list li {
+    width: calc((100% - 48px) / 3);
 }
 
-/* FOOTER */
-.footer-copyrigth {
-    background-color: #2e2f42;
+.doing-item {}
+
+/*------------------------------------------------------------ SECTION FOUR ------------------------------------------------------------------*/
+.team {
+    padding-bottom: 120px;
+    background-color: #F4F4FD;
 }
 
-.logo-right-footer {
-    color: #f4f4fd;
+.team-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--background-title-color);
 }
 
-.footer-text {
-    font-family: 'Roboto';
-    font-style: normal;
+.team-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.team-img {
+    background-color: #FFFFFF;
+}
+
+.team-headline-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--background-title-color);
+}
+
+.team-text-item {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--primary-text-color);
 }
 
+.wrap-item {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/*----------------------------------------------------------------- FOOTER-------------------------------------------------------------------- */
+.footer-copyrigth {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background: #2E2F42;
+}
+
+.logo-left {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+
+.logo-right-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F4F4FD;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+    margin-top: 16px;
+    width: 264px;
+}
 
 /*------------------------------------------------------------ PORTFOLIO----------------------------------------- */
 
@@ -192,10 +395,4 @@ body {
 .btn-list:is(:hover, :focus) {
     color: var(--btn-list-color);
     background-color: var(--btn-list-background);
-}
-
-/*------------------------------------------------------- FOOTER -------------------------------------------------*/
-
-.footer-copy-por {
-    background-color: #2e2f42;
 }
