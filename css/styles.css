@@ -50,7 +50,7 @@ body {
 /* ------------------------------------------------------------скидання---------------------------------------- */
 
 .container {
-    width: 1150px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -274,10 +274,7 @@ body {
     flex-wrap: wrap;
     gap: 24px;
     align-items: center;
-}
-
-.doing-list li {
-    width: calc((100% - 48px) / 3);
+    justify-content: center;
 }
 
 .doing-item {}
@@ -285,6 +282,7 @@ body {
 /*------------------------------------------------------------ SECTION FOUR ------------------------------------------------------------------*/
 .team {
     padding-bottom: 120px;
+    padding-top: 120px;
     background-color: #F4F4FD;
 }
 
@@ -315,6 +313,7 @@ body {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color: var(--background-title-color);
 }
 
@@ -331,6 +330,7 @@ body {
     padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 32px;
+    padding-right: 16px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -382,6 +382,7 @@ body {
 /*------------------------------------------------------------ PORTFOLIO----------------------------------------- */
 .section-portfolio {
     background-color: var(--background-color);
+    padding-bottom: 120px;
 }
 
 .portfolio-btn-list {
@@ -391,7 +392,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -424,6 +425,7 @@ body {
     padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 32px;
+    padding-right: 16px;
     border: 1px solid #e7e9fc;
     border-top: transparent;
 }
@@ -442,11 +444,10 @@ body {
     color: #4D5AE5;
     background-color: #F4F4FD;
     cursor: pointer;
-    max-width: 126px;
-    height: 48px;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    padding: 12px 24px;
 }
 
 .btn-list:is(:hover, :focus) {
