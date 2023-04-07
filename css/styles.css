@@ -68,6 +68,7 @@ body {
 .header {
     border: 1px solid #e7e9fc;
     border-top: transparent;
+    padding: 24px 0px;
 }
 
 /*-------------------------------------------------------- logo------------------------------------------------ */
@@ -96,22 +97,12 @@ body {
     display: flex;
     align-items: center;
     margin-right: auto;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .header-list {
     display: flex;
     gap: 40px;
 }
-
-/* .header-item {
-    margin-right: 40px;
-}
-
-.header-item:last-child {
-    margin-right: 0;
-} */
 
 .header-container {
     display: flex;
@@ -383,6 +374,7 @@ body {
 .section-portfolio {
     background-color: var(--background-color);
     padding-bottom: 120px;
+    padding-top: 96px;
 }
 
 .portfolio-btn-list {
@@ -391,7 +383,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -411,6 +402,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--background-title-color);
+    margin-bottom: 8px;
 }
 
 .text-item {
